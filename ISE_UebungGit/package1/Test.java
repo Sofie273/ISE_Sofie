@@ -23,4 +23,17 @@ class Test {
 		assertEquals(true, tom.lebendig);
 		
 	}
+	
+	@org.junit.jupiter.api.Test
+	void testKannFliegen() {
+		//kann Papagei fliegen? und okapi laufen? und pinguin laufen?
+		
+		Papagei kiki = new Papagei("Kiki");
+		Okapi nils = new Okapi();
+		Pinguin gabriel = new Pinguin();
+		
+		assertEquals("Ich fliege", kiki.fortbewegen());
+		assertEquals("*galoppel galoppel*", nils.fortbewegen());
+		assertEquals("",gabriel.fortbewegen());
+	}
 }

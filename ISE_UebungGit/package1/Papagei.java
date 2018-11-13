@@ -5,6 +5,7 @@ public class Papagei  extends Vogel{
 	// kann sprechen(seinen Namen sagen) und fliegen
 	public Papagei(String name) {
 		this.name = name;
+		this.kannFliegen = true;
 	}
 	public String getGeraeusch() {
 		return "Mein Name ist " +name;

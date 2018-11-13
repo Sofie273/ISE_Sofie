@@ -5,5 +5,6 @@ public class Pinguin extends Vogel{
 	
 	Pinguin(){
 		this.geraeusch= "Trooo";
+		this.kannFliegen =false;
 	}
 }

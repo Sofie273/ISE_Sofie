@@ -12,4 +12,7 @@ public class Vogel extends Tier {
 	public String getGeraeusch() {
 		return geraeusch;
 	}
+	public String fliegen() {
+		return "Ich fliege";
+	}
 }
