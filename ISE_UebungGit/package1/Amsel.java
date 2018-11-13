@@ -5,5 +5,7 @@ public class Amsel extends Vogel {
 	
 	Amsel(){
 		this.geraeusch = "tschilp";
+		this.Zootier = false;
+		zooTier();
 	}
 }

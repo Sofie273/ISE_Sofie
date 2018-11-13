@@ -6,6 +6,8 @@ public class Papagei  extends Vogel{
 	public Papagei(String name) {
 		this.name = name;
 		this.kannFliegen = true;
+		this.Zootier = true;
+		zooTier();
 	}
 	public String getGeraeusch() {
 		return "Mein Name ist " +name;

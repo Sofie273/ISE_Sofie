@@ -2,6 +2,8 @@ package package1;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 class Test {
 
 	@org.junit.jupiter.api.Test
@@ -35,5 +37,22 @@ class Test {
 		assertEquals("Ich fliege", kiki.fortbewegen());
 		assertEquals("*galoppel galoppel*", nils.fortbewegen());
 		assertEquals("",gabriel.fortbewegen());
+	}
+	
+	@org.junit.jupiter.api.Test
+	void werIstZootier() {
+		//Zootiere im gehege andere frei
+		
+		Amsel angelina = new Amsel();
+		
+		assertEquals(false, angelina.Zootier);
+		assertEquals(false, angelina.imGehege);
+		
+		Okapi bento = new Okapi();
+		
+		assertEquals(true, bento.Zootier);
+		assertEquals(true, bento.imGehege);
+	
+		
 	}
 }
