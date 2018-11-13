@@ -4,11 +4,23 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Test {
 
-	public Vogel pT;
 	@org.junit.jupiter.api.Test
-	void test() {
-		//kann Papagei fliegen?
+	void testPapageiSprache() {
+		//kann Papagei sprechen?
+		
+		Papagei alex = new Papagei("Alex");
+		
+		assertEquals("Mein Name ist Alex",alex.machGeraeusche());
 		
 	}
-
+	
+	@org.junit.jupiter.api.Test
+	void testPapageiLeben() {
+		//lebt Papagei?
+		
+		Papagei tom = new Papagei("Tom");
+		
+		assertEquals(true, tom.lebendig);
+		
+	}
 }
